@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package tsum;
 
 import java.io.BufferedReader;
@@ -17,8 +14,16 @@ import java.util.Arrays;
  *
  * @author TofixXx
  */
+
+/** Solving 2SUM problem by method of two pointers.
+ Input information reads from file, result writes to file.*/
 public class TwoSum {
 
+    /** Searches two elements of array, that arr[i] + arr[j] = 0.
+     * @param arr array
+     * @return If elements are exists, returns aray of it's sorted indexes.
+     * Otherwise, returns arry with -1 value
+     */
     static int[] findTwoElementsWithZeroSum(int arr[]) {
         int[] sortedArr = new int[arr.length];
         System.arraycopy(arr, 0, sortedArr, 0, arr.length);
@@ -44,6 +49,8 @@ public class TwoSum {
                 getIndexesByValue(arr, resValue) : new int[]{-1};
     }
 
+    /** Returns two indexes (for positive and negative values of number)
+    */
     static int[] getIndexesByValue(int arr[], int num) {
         int[] resInds = new int[]{-1, -1};
         for (int i = 0; i < arr.length; i++) {
