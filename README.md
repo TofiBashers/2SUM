@@ -8,6 +8,3 @@ Time complexity - O(n) (exclude a pre-sorting time) </br>
 </br>
 </br>
 Java version: 1.7
-
-
-LOL
